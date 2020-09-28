@@ -17,6 +17,7 @@ class RubyChallenge
         new_arr << elem
       end
     end
+
     result_hash = {}
     new_arr.each do |path|
       path_key = path.join("")
@@ -26,7 +27,8 @@ class RubyChallenge
         result_hash[path_key] = 1
       end
     end
-    p result_hash.sort_by {|key, value| value}
+
+    result_hash.sort_by {|key, value| value}.last(5)
   end
 end
 
