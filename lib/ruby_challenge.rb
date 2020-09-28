@@ -1,5 +1,3 @@
-require "pry"
-
 class RubyChallenge
   def initialize
     @paths = []
